@@ -1,0 +1,13 @@
+{
+  "name": "subtraction",
+  "version": "0.0.0",
+  "description": "subtraction",
+  "main": "subtraction.js",
+  "type": "module",
+  "author": {
+    "name": ""
+  },
+  "devDependencies": {
+    "eslint": "^8.54.0"
+  }
+}
