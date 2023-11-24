@@ -1,10 +1,10 @@
-/*function divide(Numb1,Numb2){
+function divide(Numb1,Numb2){
     try {
         
     } catch (error) {
         
     }
-}*/
+}
 let Numb1 = Number;
 let Numb2 = Number;
 let resultat = Float32Array;
