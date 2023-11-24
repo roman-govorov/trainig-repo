@@ -19,3 +19,7 @@ function subtraction(num1, num2) {
         }
     }
 }
+let num1 = null
+let num2 = Infinity
+console.log(num1 - num2) 
+var result = subtraction(num1, num2)
