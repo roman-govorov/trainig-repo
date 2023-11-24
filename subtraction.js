@@ -1,6 +1,6 @@
-function subtraction(num1, num2) {
+
+export function subtraction(num1, num2) {
     if (isNaN(num1) || num1 === undefined || num1 === Infinity || num1 === null || isNaN(num2) || num2 === undefined || num2 === Infinity || num2 === null){
-        console.error("[subtraction] Unit-test failed. Error message: (Parameter is not a number). Input params: num1 = " + num1 + "; num2 = "+ num2 +". Output results: result = " + result)
         throw new Error("Parameter is not a number");
     } else
     {
