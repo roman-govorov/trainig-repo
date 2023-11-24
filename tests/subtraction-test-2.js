@@ -1,4 +1,4 @@
-import {subtraction} from './subtraction-test.js'
+import {subtraction} from './subtraction.js'
 export function subtractionTest2(num1, num2) {
     let result = subtraction(num1, num2)
     if (result === 0.1)
