@@ -1,7 +1,7 @@
-import { exponentation } from '.calculator/exponentation.js'
-export function exponentationTest3(num1, num2) {
+import { exponentation } from '../calculator/Exponentation.js'
+export function exponentationTest3(n1, n2) {
     try {
-        var otv = exponentation(num1, num2)
+        var otv = exponentation(n1, n2)
     }
     catch (r) {
         console.error(r)

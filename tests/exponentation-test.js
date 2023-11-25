@@ -1,8 +1,8 @@
-import { exponentationTest1 } from '/exponentation-test1.js'
-import { exponentationTest2 } from '/exponentation-test2.js'
-import { exponentationTest3 } from '/exponentation-test3.js'
-import { exponentationTest4 } from '/exponentation-test4.js'
-import { exponentationTest5 } from '/exponentation-test5.js'
+import { exponentationTest1 } from './exponentation-test1.js';
+import { exponentationTest2 } from './exponentation-test2.js';
+import { exponentationTest3 } from './exponentation-test3.js';
+import { exponentationTest4 } from './exponentation-test4.js';
+import { exponentationTest5 } from './exponentation-test5.js';
 export class exponentationTest {
     static test1() {
         exponentationTest1(2, 3)
