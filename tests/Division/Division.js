@@ -1,18 +1,32 @@
 let resultat = Float32Array;
-function divide(Numb1 = Number, Numb2 = Number){
+let multiinput = false;
+function divide(Numb1 = Number, Numb2 = Number, flush= false){
     try {
-        resultat = Numb1 / Numb2
-        if (resultat == Infinity || resultat == NaN)
+        if (flush = true)
         {
-            throw new Error(console.log('Произошла ошибка в параметрах'));
+            Numb1 = Numb2 = resultat = 0;
+            multiinput = false;
+            return resultat;
         }
-        else
+        
+        if (Numb2 == Number || multiinput == false)
+        {   multiinput= true
+            return Numb1; // Если пользователь ещё не ввёл значение и нажимает на деление, то ему возвращается 1 результат
+        }
+        if (multiinput == true)
         {
-            return resultat
-        }
-    } 
-    catch (e) {
+            resultat = Numb1 / Numb2
+            if (resultat == Infinity || resultat == NaN|| Numb1 ==Infinity || Numb2 ==Infinity)
+            {
+                throw new Error(console.log('Произошла ошибка в параметрах'));
+            }
+            else
+            {
+                return resultat;
+            }
+    } }
+    catch (err) {
         alert("Деление на 0 приводит к ∞")
     }
 }
-export {Numb1,Numb2,resultat,divide}
+export {divide,Numb1,Numb2,resultat,flush}
