@@ -1,14 +1,18 @@
-function divide(Numb1,Numb2){
+let resultat = Float32Array;
+function divide(Numb1 = Number, Numb2 = Number){
     try {
-        
-    } catch (error) {
-        
+        resultat = Numb1 / Numb2
+        if (resultat == Infinity || resultat == NaN)
+        {
+            throw new Error(console.log('Произошла ошибка в параметрах'));
+        }
+        else
+        {
+            return resultat
+        }
+    } 
+    catch (e) {
+        alert("Деление на 0 приводит к ∞")
     }
 }
-let Numb1 = Number;
-let Numb2 = Number;
-let resultat = Float32Array;
-if (Numb2 != 0){
-    resultat = Numb1 / Numb2;
-}
-export {Numb1,Numb2,resultat}
+export {Numb1,Numb2,resultat,divide}
