@@ -2,7 +2,7 @@ let resultat;
 let multiinput = false;
 function divide(Numb1 = Number, Numb2 = Number, flush= false){
     try {
-        if (flush = true)
+        if (flush == true)
         {
             Numb1 = Numb2 = resultat = 0;
             multiinput = false;
