@@ -30,3 +30,4 @@ function divide(Numb1 = Number, Numb2 = Number, flush= false){
     }
 }
 export {Numb1,Numb2,resultat,flush,divide}
+ 
