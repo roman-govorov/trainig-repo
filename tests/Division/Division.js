@@ -29,4 +29,4 @@ function divide(Numb1 = Number, Numb2 = Number, flush= false){
         alert("Деление на 0 приводит к ∞")
     }
 }
-export {divide,Numb1,Numb2,resultat,flush}
+export {Numb1,Numb2,resultat,flush,divide}
