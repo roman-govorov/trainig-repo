@@ -1,4 +1,4 @@
-import{addition} from '..Sum/sum.js'
+import {addition} from '..Sum/sum.js'
 export function test1(n1,n2)
 let result= addition(n1,n2)
 if(result===0)
