@@ -1,4 +1,4 @@
-import { divide, Numb1, Numb2,flush,resultat } from "../Division";
+import { divide, Numb1, Numb2,flush,resultat } from "../calculator/Division";
 let test1 = (divide(1,2,false))
 if (test1 == 0.5 == resultat)
 {console.log('Test1 Passed')}
