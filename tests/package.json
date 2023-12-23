@@ -1,0 +1,14 @@
+{
+  "name": "exponentatiton",
+  "version": "1.0.0",
+  "description": "exponentation",
+  "main": "testing.js",
+  "type": "module",
+  "directories": {
+    "test": "tests"
+  },
+  "author": "",
+  "devDependencies": {
+    "eslint": "8.54.0"
+  }
+}
