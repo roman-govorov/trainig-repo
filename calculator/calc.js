@@ -1,11 +1,10 @@
+import { exponentation } from "./Exponentation.js";
 let a = ''; //first num
 let b = ''; //second num
 let sign = '';//знак операции
 let finish = false;
-
 const digit = ['0', '1', '2', '3', '4', '5', '6', '7', '8', '9', '0', '.'];
 const action = ['-', '+', 'X', '/', '^'];
-
 //экран
 const out = document.querySelector('.calc-screen p')
 
@@ -61,7 +60,7 @@ document.querySelector('.buttons').onclick = (event) => {
         if (b === '') b = a;
         switch (sign) {
             case "^":
-                a = Math.pow(a, b);
+                a = exponentation(a, b);
                 break;
         }
         finish = true;
