@@ -1,6 +1,6 @@
 import { exponentation } from '../calculator/Exponentation.js'
-export function exponentationTest3(n1, n2) {
-    let otv = exponentation(n1, n2)
+export function exponentationTest3(a, b) {
+    let otv = exponentation(a, b)
     if (otv === -8) {
         console.log("Successful test" + otv)
     }

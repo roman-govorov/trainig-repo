@@ -1,6 +1,6 @@
 import { exponentation } from '../calculator/Exponentation.js'
-export function exponentationTest2(n1, n2) {
-    let otv = exponentation(n1, n2)
+export function exponentationTest2(a, b) {
+    let otv = exponentation(a, b)
     if (otv === 0.03125) {
         console.log("Successful test" + otv)
     }
