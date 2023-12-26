@@ -1,4 +1,5 @@
 import { exponentation } from "./Exponentation.js";
+import { subtraction } from "./subtraction.js";
 let a = ''; //first num
 let b = ''; //second num
 let sign = '';//знак операции
@@ -62,6 +63,10 @@ document.querySelector('.buttons').onclick = (event) => {
             case "^":
                 a = exponentation(a, b);
                 break;
+            case "-":
+                a = subtraction(a, b);
+                break;
+
         }
         finish = true;
         out.textContent = a;
