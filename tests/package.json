@@ -1,13 +1,15 @@
+
 {
-  "name": "subtraction",
-  "version": "0.0.0",
-  "description": "subtraction",
-  "main": "test.js",
+  "name": "exponentatiton",
+  "version": "1.0.0",
+  "description": "exponentation",
+  "main": "testing.js",
   "type": "module",
-  "author": {
-    "name": ""
+  "directories": {
+    "test": "tests"
   },
+  "author": "",
   "devDependencies": {
-    "eslint": "^8.54.0"
+    "eslint": "8.54.0"
   }
 }
