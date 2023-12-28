@@ -7,14 +7,14 @@ let finish = false;
 const digit = ['0', '1', '2', '3', '4', '5', '6', '7', '8', '9', '0', '.'];
 const action = ['-', '+', 'X', '/', '^'];
 //экран
-const out = document.querySelector('.calc-screen p')
+var out = document.getElementById('display');
 
 function clearAll() {
     a = '';
     b = '';
     sign = '';
     finish = false;
-    out.textContent = 0;
+    out.value = 0;
 }
 
 document.querySelector('.C').onclick = clearAll;
@@ -34,16 +34,16 @@ document.querySelector('.buttons').onclick = (event) => {
 
             a += key;
             console.log(a, b, sign);
-            out.textContent = a;
+            out.value = a;
         }
         else if (a !== '' && b !== '' && finish) {
             b = key;
             finish = false;
-            out.textContent = a;
+            out.value += a;
         }
         else {
             b += key;
-            out.textContent = b;
+            out.value += b;
         }
         console.log(a, b, sign);
         return;
@@ -51,7 +51,7 @@ document.querySelector('.buttons').onclick = (event) => {
 
     if (action.includes(key)) {
         sign = key;
-        out.textContent = sign;
+        out.value += sign;
         console.log(a, b, sign);
         return;
     }
@@ -69,7 +69,7 @@ document.querySelector('.buttons').onclick = (event) => {
 
         }
         finish = true;
-        out.textContent = a;
+        out.value = a;
         console.log(a, b, sign);
     }
 }
