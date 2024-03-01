@@ -1,0 +1,10 @@
+import {addition} from '..Sum/sum.js'
+export function test1(n1,n2)
+let result= addition(n1,n2)
+if(result===0)
+{
+console.log("successful"+result)
+else{
+console.log("error"+result)
+}
+}
